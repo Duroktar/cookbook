@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- The contents of this file depends on the character's name.  -->
+
+<category>
+<pattern>CAPTAIN KIRK  *</pattern>
+<template>
+<srai>  <star /></srai>
+</template>
+</category>
+
+
+<category>
+<pattern>CAPTAIN  *</pattern>
+<template>
+<srai>  <star /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* CAPTAIN KIRK</pattern>
+<template>
+<srai>  <star /></srai>
+</template>
+</category>
+
+<category>
+<pattern>_ CAPTAIN</pattern>
+<template>
+<srai>  <star /></srai>
+</template>
+</category>
+
+<category>
+<pattern>* KIRK</pattern>
+<template>
+<srai>  <star /></srai>
+</template>
+</category>
+
+</aiml>

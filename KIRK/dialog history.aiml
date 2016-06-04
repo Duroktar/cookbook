@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category>
+<pattern>CLEAR DIALOG HISTORY</pattern>
+<template>
+Cleared.
+<think>
+<set name="response1"></set>
+<set name="request1"></set>
+<set name="response2"></set>
+<set name="request2"></set>
+<set name="response3"></set>
+<set name="request3"></set>
+<set name="response4"></set>
+<set name="request4"></set>
+<set name="response5"></set>
+<set name="request5"></set>
+<set name="response6"></set>
+<set name="request6"></set>
+<set name="response7"></set>
+<set name="request7"></set>
+<set name="response8"></set>
+<set name="request8"></set>
+<set name="response9"></set>
+<set name="request9"></set>
+<set name="response10"></set>
+<set name="request10"></set>
+<set name="response11"></set>
+<set name="request11"></set>
+<set name="response12"></set>
+<set name="request12"></set>
+<set name="response13"></set>
+<set name="request13"></set>
+<set name="response14"></set>
+<set name="request14"></set>
+<set name="response15"></set>
+<set name="request15"></set>
+<set name="response16"></set>
+<set name="request16"></set>
+<set name="response17"></set>
+<set name="request17"></set>
+<set name="response18"></set>
+<set name="request18"></set>
+<set name="response19"></set>
+<set name="request19"></set>
+<set name="response20"></set>
+<set name="request20"></set>
+<set name="response21"></set>
+<set name="request21"></set>
+<set name="response22"></set>
+<set name="request22"></set>
+<set name="response23"></set>
+<set name="request23"></set>
+<set name="response24"></set>
+<set name="request24"></set>
+<set name="response25"></set>
+<set name="request25"></set>
+<set name="response26"></set>
+<set name="request26"></set>
+<set name="response27"></set>
+<set name="request27"></set>
+<set name="response28"></set>
+<set name="request28"></set>
+<set name="response29"></set>
+<set name="request29"></set>
+<set name="response30"></set>
+<set name="request30"></set>
+<set name="response31"></set>
+<set name="request31"></set>
+<set name="response32"></set>
+<set name="request32"></set>
+<set name="response33"></set>
+<set name="request33"></set>
+<set name="response34"></set>
+<set name="request34"></set>
+<set name="response35"></set>
+<set name="request35"></set>
+<set name="response36"></set>
+<set name="request36"></set>
+<set name="response37"></set>
+<set name="request37"></set>
+<set name="response38"></set>
+<set name="request38"></set>
+<set name="response39"></set>
+<set name="request39"></set>
+<set name="response40"></set>
+<set name="request40"></set>
+<set name="response41"></set>
+<set name="request41"></set>
+<set name="response42"></set>
+<set name="request42"></set>
+<set name="response43"></set>
+<set name="request43"></set>
+<set name="response44"></set>
+<set name="request44"></set>
+<set name="response45"></set>
+<set name="request45"></set>
+<set name="response46"></set>
+<set name="request46"></set>
+<set name="response47"></set>
+<set name="request47"></set>
+<set name="response48"></set>
+<set name="request48"></set>
+<set name="response49"></set>
+<set name="request49"></set>
+<set name="response50"></set>
+<set name="request50"></set>
+<set name="response51"></set>
+<set name="request51"></set>
+<set name="response52"></set>
+<set name="request52"></set>
+<set name="response53"></set>
+<set name="request53"></set>
+<set name="response54"></set>
+<set name="request54"></set>
+<set name="response55"></set>
+<set name="request55"></set>
+<set name="response56"></set>
+<set name="request56"></set>
+<set name="response57"></set>
+<set name="request57"></set>
+<set name="response58"></set>
+<set name="request58"></set>
+<set name="response59"></set>
+<set name="request59"></set>
+<set name="response60"></set>
+<set name="request60"></set>
+<set name="response61"></set>
+<set name="request61"></set>
+<set name="response62"></set>
+<set name="request62"></set>
+<set name="response63"></set>
+<set name="request63"></set>
+<set name="response64"></set>
+<set name="request64"></set>
+<set name="response65"></set>
+<set name="request65"></set>
+<set name="response66"></set>
+<set name="request66"></set>
+<set name="response67"></set>
+<set name="request67"></set>
+<set name="response68"></set>
+<set name="request68"></set>
+<set name="response69"></set>
+<set name="request69"></set>
+<set name="response70"></set>
+<set name="request70"></set>
+<set name="response71"></set>
+<set name="request71"></set>
+<set name="response72"></set>
+<set name="request72"></set>
+<set name="response73"></set>
+<set name="request73"></set>
+<set name="response74"></set>
+<set name="request74"></set>
+<set name="response75"></set>
+<set name="request75"></set>
+<set name="response76"></set>
+<set name="request76"></set>
+<set name="response77"></set>
+<set name="request77"></set>
+<set name="response78"></set>
+<set name="request78"></set>
+<set name="response79"></set>
+<set name="request79"></set>
+<set name="response80"></set>
+<set name="request80"></set>
+<set name="response81"></set>
+<set name="request81"></set>
+<set name="response82"></set>
+<set name="request82"></set>
+<set name="response83"></set>
+<set name="request83"></set>
+<set name="response84"></set>
+<set name="request84"></set>
+<set name="response85"></set>
+<set name="request85"></set>
+<set name="response86"></set>
+<set name="request86"></set>
+<set name="response87"></set>
+<set name="request87"></set>
+<set name="response88"></set>
+<set name="request88"></set>
+<set name="response89"></set>
+<set name="request89"></set>
+<set name="response90"></set>
+<set name="request90"></set>
+<set name="response91"></set>
+<set name="request91"></set>
+<set name="response92"></set>
+<set name="request92"></set>
+<set name="response93"></set>
+<set name="request93"></set>
+<set name="response94"></set>
+<set name="request94"></set>
+<set name="response95"></set>
+<set name="request95"></set>
+<set name="response96"></set>
+<set name="request96"></set>
+<set name="response97"></set>
+<set name="request97"></set>
+<set name="response98"></set>
+<set name="request98"></set>
+<set name="response99"></set>
+<set name="request99"></set>
+<set name="response100"></set>
+<set name="request100"></set>
+
+
+</think>
+</template>
+</category>
+
+
+<category>
+<pattern>DIALOG HISTORY</pattern>
+<template>
+<think>
+<set name="request100"><get name="request99"/></set>
+<set name="response100"><get name="response99"/></set>
+<set name="request99"><get name="request98"/></set>
+<set name="response99"><get name="response98"/></set>
+<set name="request98"><get name="request97"/></set>
+<set name="response98"><get name="response97"/></set>
+<set name="request97"><get name="request96"/></set>
+<set name="response97"><get name="response96"/></set>
+<set name="request96"><get name="request95"/></set>
+<set name="response96"><get name="response95"/></set>
+<set name="request95"><get name="request94"/></set>
+<set name="response95"><get name="response94"/></set>
+<set name="request94"><get name="request93"/></set>
+<set name="response94"><get name="response93"/></set>
+<set name="request93"><get name="request92"/></set>
+<set name="response93"><get name="response92"/></set>
+<set name="request92"><get name="request91"/></set>
+<set name="response92"><get name="response91"/></set>
+<set name="request91"><get name="request90"/></set>
+<set name="response91"><get name="response90"/></set>
+<set name="request90"><get name="request89"/></set>
+<set name="response90"><get name="response89"/></set>
+<set name="request89"><get name="request88"/></set>
+<set name="response89"><get name="response88"/></set>
+<set name="request88"><get name="request87"/></set>
+<set name="response88"><get name="response87"/></set>
+<set name="request87"><get name="request86"/></set>
+<set name="response87"><get name="response86"/></set>
+<set name="request86"><get name="request85"/></set>
+<set name="response86"><get name="response85"/></set>
+<set name="request85"><get name="request84"/></set>
+<set name="response85"><get name="response84"/></set>
+<set name="request84"><get name="request83"/></set>
+<set name="response84"><get name="response83"/></set>
+<set name="request83"><get name="request82"/></set>
+<set name="response83"><get name="response82"/></set>
+<set name="request82"><get name="request81"/></set>
+<set name="response82"><get name="response81"/></set>
+<set name="request81"><get name="request80"/></set>
+<set name="response81"><get name="response80"/></set>
+<set name="request80"><get name="request79"/></set>
+<set name="response80"><get name="response79"/></set>
+<set name="request79"><get name="request78"/></set>
+<set name="response79"><get name="response78"/></set>
+<set name="request78"><get name="request77"/></set>
+<set name="response78"><get name="response77"/></set>
+<set name="request77"><get name="request76"/></set>
+<set name="response77"><get name="response76"/></set>
+<set name="request76"><get name="request75"/></set>
+<set name="response76"><get name="response75"/></set>
+<set name="request75"><get name="request74"/></set>
+<set name="response75"><get name="response74"/></set>
+<set name="request74"><get name="request73"/></set>
+<set name="response74"><get name="response73"/></set>
+<set name="request73"><get name="request72"/></set>
+<set name="response73"><get name="response72"/></set>
+<set name="request72"><get name="request71"/></set>
+<set name="response72"><get name="response71"/></set>
+<set name="request71"><get name="request70"/></set>
+<set name="response71"><get name="response70"/></set>
+<set name="request70"><get name="request69"/></set>
+<set name="response70"><get name="response69"/></set>
+<set name="request69"><get name="request68"/></set>
+<set name="response69"><get name="response68"/></set>
+<set name="request68"><get name="request67"/></set>
+<set name="response68"><get name="response67"/></set>
+<set name="request67"><get name="request66"/></set>
+<set name="response67"><get name="response66"/></set>
+<set name="request66"><get name="request65"/></set>
+<set name="response66"><get name="response65"/></set>
+<set name="request65"><get name="request64"/></set>
+<set name="response65"><get name="response64"/></set>
+<set name="request64"><get name="request63"/></set>
+<set name="response64"><get name="response63"/></set>
+<set name="request63"><get name="request62"/></set>
+<set name="response63"><get name="response62"/></set>
+<set name="request62"><get name="request61"/></set>
+<set name="response62"><get name="response61"/></set>
+<set name="request61"><get name="request60"/></set>
+<set name="response61"><get name="response60"/></set>
+<set name="request60"><get name="request59"/></set>
+<set name="response60"><get name="response59"/></set>
+<set name="request59"><get name="request58"/></set>
+<set name="response59"><get name="response58"/></set>
+<set name="request58"><get name="request57"/></set>
+<set name="response58"><get name="response57"/></set>
+<set name="request57"><get name="request56"/></set>
+<set name="response57"><get name="response56"/></set>
+<set name="request56"><get name="request55"/></set>
+<set name="response56"><get name="response55"/></set>
+<set name="request55"><get name="request54"/></set>
+<set name="response55"><get name="response54"/></set>
+<set name="request54"><get name="request53"/></set>
+<set name="response54"><get name="response53"/></set>
+<set name="request53"><get name="request52"/></set>
+<set name="response53"><get name="response52"/></set>
+<set name="request52"><get name="request51"/></set>
+<set name="response52"><get name="response51"/></set>
+<set name="request51"><get name="request50"/></set>
+<set name="response51"><get name="response50"/></set>
+<set name="request50"><get name="request49"/></set>
+<set name="response50"><get name="response49"/></set>
+<set name="request49"><get name="request48"/></set>
+<set name="response49"><get name="response48"/></set>
+<set name="request48"><get name="request47"/></set>
+<set name="response48"><get name="response47"/></set>
+<set name="request47"><get name="request46"/></set>
+<set name="response47"><get name="response46"/></set>
+<set name="request46"><get name="request45"/></set>
+<set name="response46"><get name="response45"/></set>
+<set name="request45"><get name="request44"/></set>
+<set name="response45"><get name="response44"/></set>
+<set name="request44"><get name="request43"/></set>
+<set name="response44"><get name="response43"/></set>
+<set name="request43"><get name="request42"/></set>
+<set name="response43"><get name="response42"/></set>
+<set name="request42"><get name="request41"/></set>
+<set name="response42"><get name="response41"/></set>
+<set name="request41"><get name="request40"/></set>
+<set name="response41"><get name="response40"/></set>
+<set name="request40"><get name="request39"/></set>
+<set name="response40"><get name="response39"/></set>
+<set name="request39"><get name="request38"/></set>
+<set name="response39"><get name="response38"/></set>
+<set name="request38"><get name="request37"/></set>
+<set name="response38"><get name="response37"/></set>
+<set name="request37"><get name="request36"/></set>
+<set name="response37"><get name="response36"/></set>
+<set name="request36"><get name="request35"/></set>
+<set name="response36"><get name="response35"/></set>
+<set name="request35"><get name="request34"/></set>
+<set name="response35"><get name="response34"/></set>
+<set name="request34"><get name="request33"/></set>
+<set name="response34"><get name="response33"/></set>
+<set name="request33"><get name="request32"/></set>
+<set name="response33"><get name="response32"/></set>
+<set name="request32"><get name="request31"/></set>
+<set name="response32"><get name="response31"/></set>
+<set name="request31"><get name="request30"/></set>
+<set name="response31"><get name="response30"/></set>
+<set name="request30"><get name="request29"/></set>
+<set name="response30"><get name="response29"/></set>
+<set name="request29"><get name="request28"/></set>
+<set name="response29"><get name="response28"/></set>
+<set name="request28"><get name="request27"/></set>
+<set name="response28"><get name="response27"/></set>
+<set name="request27"><get name="request26"/></set>
+<set name="response27"><get name="response26"/></set>
+<set name="request26"><get name="request25"/></set>
+<set name="response26"><get name="response25"/></set>
+<set name="request25"><get name="request24"/></set>
+<set name="response25"><get name="response24"/></set>
+<set name="request24"><get name="request23"/></set>
+<set name="response24"><get name="response23"/></set>
+<set name="request23"><get name="request22"/></set>
+<set name="response23"><get name="response22"/></set>
+<set name="request22"><get name="request21"/></set>
+<set name="response22"><get name="response21"/></set>
+<set name="request21"><get name="request20"/></set>
+<set name="response21"><get name="response20"/></set>
+<set name="request20"><get name="request19"/></set>
+<set name="response20"><get name="response19"/></set>
+<set name="request19"><get name="request18"/></set>
+<set name="response19"><get name="response18"/></set>
+<set name="request18"><get name="request17"/></set>
+<set name="response18"><get name="response17"/></set>
+<set name="request17"><get name="request16"/></set>
+<set name="response17"><get name="response16"/></set>
+<set name="request16"><get name="request15"/></set>
+<set name="response16"><get name="response15"/></set>
+<set name="request15"><get name="request14"/></set>
+<set name="response15"><get name="response14"/></set>
+<set name="request14"><get name="request13"/></set>
+<set name="response14"><get name="response13"/></set>
+<set name="request13"><get name="request12"/></set>
+<set name="response13"><get name="response12"/></set>
+<set name="request12"><get name="request11"/></set>
+<set name="response12"><get name="response11"/></set>
+<set name="request11"><get name="request10"/></set>
+<set name="response11"><get name="response10"/></set>
+<set name="request10"><get name="request9"/></set>
+<set name="response10"><get name="response9"/></set>
+<set name="request9"><get name="request8"/></set>
+<set name="response9"><get name="response8"/></set>
+<set name="request8"><get name="request7"/></set>
+<set name="response8"><get name="response7"/></set>
+<set name="request7"><get name="request6"/></set>
+<set name="response7"><get name="response6"/></set>
+<set name="request6"><get name="request5"/></set>
+<set name="response6"><get name="response5"/></set>
+<set name="request5"><get name="request4"/></set>
+<set name="response5"><get name="response4"/></set>
+<set name="request4"><get name="request3"/></set>
+<set name="response4"><get name="response3"/></set>
+<set name="request3"><get name="request2"/></set>
+<set name="response3"><get name="response2"/></set>
+<set name="request2"><get name="request1"/></set>
+<set name="response2"><get name="response1"/></set>
+<set name="request1"><request/></set>
+<set name="response1"><response/></set>
+</think>
+<condition name="request100" value="*">
+<br/>
+<get name="name"/>: <get name="request100"/><br/>
+<bot name="name"/>: <get name="response100"/>
+</condition>
+<condition name="request99" value="*">
+<br/>
+<get name="name"/>: <get name="request99"/><br/>
+<bot name="name"/>: <get name="response99"/>
+</condition>
+<condition name="request98" value="*">
+<br/>
+<get name="name"/>: <get name="request98"/><br/>
+<bot name="name"/>: <get name="response98"/>
+</condition>
+<condition name="request97" value="*">
+<br/>
+<get name="name"/>: <get name="request97"/><br/>
+<bot name="name"/>: <get name="response97"/>
+</condition>
+<condition name="request96" value="*">
+<br/>
+<get name="name"/>: <get name="request96"/><br/>
+<bot name="name"/>: <get name="response96"/>
+</condition>
+<condition name="request95" value="*">
+<br/>
+<get name="name"/>: <get name="request95"/><br/>
+<bot name="name"/>: <get name="response95"/>
+</condition>
+<condition name="request94" value="*">
+<br/>
+<get name="name"/>: <get name="request94"/><br/>
+<bot name="name"/>: <get name="response94"/>
+</condition>
+<condition name="request93" value="*">
+<br/>
+<get name="name"/>: <get name="request93"/><br/>
+<bot name="name"/>: <get name="response93"/>
+</condition>
+<condition name="request92" value="*">
+<br/>
+<get name="name"/>: <get name="request92"/><br/>
+<bot name="name"/>: <get name="response92"/>
+</condition>
+<condition name="request91" value="*">
+<br/>
+<get name="name"/>: <get name="request91"/><br/>
+<bot name="name"/>: <get name="response91"/>
+</condition>
+<condition name="request90" value="*">
+<br/>
+<get name="name"/>: <get name="request90"/><br/>
+<bot name="name"/>: <get name="response90"/>
+</condition>
+<condition name="request89" value="*">
+<br/>
+<get name="name"/>: <get name="request89"/><br/>
+<bot name="name"/>: <get name="response89"/>
+</condition>
+<condition name="request88" value="*">
+<br/>
+<get name="name"/>: <get name="request88"/><br/>
+<bot name="name"/>: <get name="response88"/>
+</condition>
+<condition name="request87" value="*">
+<br/>
+<get name="name"/>: <get name="request87"/><br/>
+<bot name="name"/>: <get name="response87"/>
+</condition>
+<condition name="request86" value="*">
+<br/>
+<get name="name"/>: <get name="request86"/><br/>
+<bot name="name"/>: <get name="response86"/>
+</condition>
+<condition name="request85" value="*">
+<br/>
+<get name="name"/>: <get name="request85"/><br/>
+<bot name="name"/>: <get name="response85"/>
+</condition>
+<condition name="request84" value="*">
+<br/>
+<get name="name"/>: <get name="request84"/><br/>
+<bot name="name"/>: <get name="response84"/>
+</condition>
+<condition name="request83" value="*">
+<br/>
+<get name="name"/>: <get name="request83"/><br/>
+<bot name="name"/>: <get name="response83"/>
+</condition>
+<condition name="request82" value="*">
+<br/>
+<get name="name"/>: <get name="request82"/><br/>
+<bot name="name"/>: <get name="response82"/>
+</condition>
+<condition name="request81" value="*">
+<br/>
+<get name="name"/>: <get name="request81"/><br/>
+<bot name="name"/>: <get name="response81"/>
+</condition>
+<condition name="request80" value="*">
+<br/>
+<get name="name"/>: <get name="request80"/><br/>
+<bot name="name"/>: <get name="response80"/>
+</condition>
+<condition name="request79" value="*">
+<br/>
+<get name="name"/>: <get name="request79"/><br/>
+<bot name="name"/>: <get name="response79"/>
+</condition>
+<condition name="request78" value="*">
+<br/>
+<get name="name"/>: <get name="request78"/><br/>
+<bot name="name"/>: <get name="response78"/>
+</condition>
+<condition name="request77" value="*">
+<br/>
+<get name="name"/>: <get name="request77"/><br/>
+<bot name="name"/>: <get name="response77"/>
+</condition>
+<condition name="request76" value="*">
+<br/>
+<get name="name"/>: <get name="request76"/><br/>
+<bot name="name"/>: <get name="response76"/>
+</condition>
+<condition name="request75" value="*">
+<br/>
+<get name="name"/>: <get name="request75"/><br/>
+<bot name="name"/>: <get name="response75"/>
+</condition>
+<condition name="request74" value="*">
+<br/>
+<get name="name"/>: <get name="request74"/><br/>
+<bot name="name"/>: <get name="response74"/>
+</condition>
+<condition name="request73" value="*">
+<br/>
+<get name="name"/>: <get name="request73"/><br/>
+<bot name="name"/>: <get name="response73"/>
+</condition>
+<condition name="request72" value="*">
+<br/>
+<get name="name"/>: <get name="request72"/><br/>
+<bot name="name"/>: <get name="response72"/>
+</condition>
+<condition name="request71" value="*">
+<br/>
+<get name="name"/>: <get name="request71"/><br/>
+<bot name="name"/>: <get name="response71"/>
+</condition>
+<condition name="request70" value="*">
+<br/>
+<get name="name"/>: <get name="request70"/><br/>
+<bot name="name"/>: <get name="response70"/>
+</condition>
+<condition name="request69" value="*">
+<br/>
+<get name="name"/>: <get name="request69"/><br/>
+<bot name="name"/>: <get name="response69"/>
+</condition>
+<condition name="request68" value="*">
+<br/>
+<get name="name"/>: <get name="request68"/><br/>
+<bot name="name"/>: <get name="response68"/>
+</condition>
+<condition name="request67" value="*">
+<br/>
+<get name="name"/>: <get name="request67"/><br/>
+<bot name="name"/>: <get name="response67"/>
+</condition>
+<condition name="request66" value="*">
+<br/>
+<get name="name"/>: <get name="request66"/><br/>
+<bot name="name"/>: <get name="response66"/>
+</condition>
+<condition name="request65" value="*">
+<br/>
+<get name="name"/>: <get name="request65"/><br/>
+<bot name="name"/>: <get name="response65"/>
+</condition>
+<condition name="request64" value="*">
+<br/>
+<get name="name"/>: <get name="request64"/><br/>
+<bot name="name"/>: <get name="response64"/>
+</condition>
+<condition name="request63" value="*">
+<br/>
+<get name="name"/>: <get name="request63"/><br/>
+<bot name="name"/>: <get name="response63"/>
+</condition>
+<condition name="request62" value="*">
+<br/>
+<get name="name"/>: <get name="request62"/><br/>
+<bot name="name"/>: <get name="response62"/>
+</condition>
+<condition name="request61" value="*">
+<br/>
+<get name="name"/>: <get name="request61"/><br/>
+<bot name="name"/>: <get name="response61"/>
+</condition>
+<condition name="request60" value="*">
+<br/>
+<get name="name"/>: <get name="request60"/><br/>
+<bot name="name"/>: <get name="response60"/>
+</condition>
+<condition name="request59" value="*">
+<br/>
+<get name="name"/>: <get name="request59"/><br/>
+<bot name="name"/>: <get name="response59"/>
+</condition>
+<condition name="request58" value="*">
+<br/>
+<get name="name"/>: <get name="request58"/><br/>
+<bot name="name"/>: <get name="response58"/>
+</condition>
+<condition name="request57" value="*">
+<br/>
+<get name="name"/>: <get name="request57"/><br/>
+<bot name="name"/>: <get name="response57"/>
+</condition>
+<condition name="request56" value="*">
+<br/>
+<get name="name"/>: <get name="request56"/><br/>
+<bot name="name"/>: <get name="response56"/>
+</condition>
+<condition name="request55" value="*">
+<br/>
+<get name="name"/>: <get name="request55"/><br/>
+<bot name="name"/>: <get name="response55"/>
+</condition>
+<condition name="request54" value="*">
+<br/>
+<get name="name"/>: <get name="request54"/><br/>
+<bot name="name"/>: <get name="response54"/>
+</condition>
+<condition name="request53" value="*">
+<br/>
+<get name="name"/>: <get name="request53"/><br/>
+<bot name="name"/>: <get name="response53"/>
+</condition>
+<condition name="request52" value="*">
+<br/>
+<get name="name"/>: <get name="request52"/><br/>
+<bot name="name"/>: <get name="response52"/>
+</condition>
+<condition name="request51" value="*">
+<br/>
+<get name="name"/>: <get name="request51"/><br/>
+<bot name="name"/>: <get name="response51"/>
+</condition>
+<condition name="request50" value="*">
+<br/>
+<get name="name"/>: <get name="request50"/><br/>
+<bot name="name"/>: <get name="response50"/>
+</condition>
+<condition name="request49" value="*">
+<br/>
+<get name="name"/>: <get name="request49"/><br/>
+<bot name="name"/>: <get name="response49"/>
+</condition>
+<condition name="request48" value="*">
+<br/>
+<get name="name"/>: <get name="request48"/><br/>
+<bot name="name"/>: <get name="response48"/>
+</condition>
+<condition name="request47" value="*">
+<br/>
+<get name="name"/>: <get name="request47"/><br/>
+<bot name="name"/>: <get name="response47"/>
+</condition>
+<condition name="request46" value="*">
+<br/>
+<get name="name"/>: <get name="request46"/><br/>
+<bot name="name"/>: <get name="response46"/>
+</condition>
+<condition name="request45" value="*">
+<br/>
+<get name="name"/>: <get name="request45"/><br/>
+<bot name="name"/>: <get name="response45"/>
+</condition>
+<condition name="request44" value="*">
+<br/>
+<get name="name"/>: <get name="request44"/><br/>
+<bot name="name"/>: <get name="response44"/>
+</condition>
+<condition name="request43" value="*">
+<br/>
+<get name="name"/>: <get name="request43"/><br/>
+<bot name="name"/>: <get name="response43"/>
+</condition>
+<condition name="request42" value="*">
+<br/>
+<get name="name"/>: <get name="request42"/><br/>
+<bot name="name"/>: <get name="response42"/>
+</condition>
+<condition name="request41" value="*">
+<br/>
+<get name="name"/>: <get name="request41"/><br/>
+<bot name="name"/>: <get name="response41"/>
+</condition>
+<condition name="request40" value="*">
+<br/>
+<get name="name"/>: <get name="request40"/><br/>
+<bot name="name"/>: <get name="response40"/>
+</condition>
+<condition name="request39" value="*">
+<br/>
+<get name="name"/>: <get name="request39"/><br/>
+<bot name="name"/>: <get name="response39"/>
+</condition>
+<condition name="request38" value="*">
+<br/>
+<get name="name"/>: <get name="request38"/><br/>
+<bot name="name"/>: <get name="response38"/>
+</condition>
+<condition name="request37" value="*">
+<br/>
+<get name="name"/>: <get name="request37"/><br/>
+<bot name="name"/>: <get name="response37"/>
+</condition>
+<condition name="request36" value="*">
+<br/>
+<get name="name"/>: <get name="request36"/><br/>
+<bot name="name"/>: <get name="response36"/>
+</condition>
+<condition name="request35" value="*">
+<br/>
+<get name="name"/>: <get name="request35"/><br/>
+<bot name="name"/>: <get name="response35"/>
+</condition>
+<condition name="request34" value="*">
+<br/>
+<get name="name"/>: <get name="request34"/><br/>
+<bot name="name"/>: <get name="response34"/>
+</condition>
+<condition name="request33" value="*">
+<br/>
+<get name="name"/>: <get name="request33"/><br/>
+<bot name="name"/>: <get name="response33"/>
+</condition>
+<condition name="request32" value="*">
+<br/>
+<get name="name"/>: <get name="request32"/><br/>
+<bot name="name"/>: <get name="response32"/>
+</condition>
+<condition name="request31" value="*">
+<br/>
+<get name="name"/>: <get name="request31"/><br/>
+<bot name="name"/>: <get name="response31"/>
+</condition>
+<condition name="request30" value="*">
+<br/>
+<get name="name"/>: <get name="request30"/><br/>
+<bot name="name"/>: <get name="response30"/>
+</condition>
+<condition name="request29" value="*">
+<br/>
+<get name="name"/>: <get name="request29"/><br/>
+<bot name="name"/>: <get name="response29"/>
+</condition>
+<condition name="request28" value="*">
+<br/>
+<get name="name"/>: <get name="request28"/><br/>
+<bot name="name"/>: <get name="response28"/>
+</condition>
+<condition name="request27" value="*">
+<br/>
+<get name="name"/>: <get name="request27"/><br/>
+<bot name="name"/>: <get name="response27"/>
+</condition>
+<condition name="request26" value="*">
+<br/>
+<get name="name"/>: <get name="request26"/><br/>
+<bot name="name"/>: <get name="response26"/>
+</condition>
+<condition name="request25" value="*">
+<br/>
+<get name="name"/>: <get name="request25"/><br/>
+<bot name="name"/>: <get name="response25"/>
+</condition>
+<condition name="request24" value="*">
+<br/>
+<get name="name"/>: <get name="request24"/><br/>
+<bot name="name"/>: <get name="response24"/>
+</condition>
+<condition name="request23" value="*">
+<br/>
+<get name="name"/>: <get name="request23"/><br/>
+<bot name="name"/>: <get name="response23"/>
+</condition>
+<condition name="request22" value="*">
+<br/>
+<get name="name"/>: <get name="request22"/><br/>
+<bot name="name"/>: <get name="response22"/>
+</condition>
+<condition name="request21" value="*">
+<br/>
+<get name="name"/>: <get name="request21"/><br/>
+<bot name="name"/>: <get name="response21"/>
+</condition>
+<condition name="request20" value="*">
+<br/>
+<get name="name"/>: <get name="request20"/><br/>
+<bot name="name"/>: <get name="response20"/>
+</condition>
+<condition name="request19" value="*">
+<br/>
+<get name="name"/>: <get name="request19"/><br/>
+<bot name="name"/>: <get name="response19"/>
+</condition>
+<condition name="request18" value="*">
+<br/>
+<get name="name"/>: <get name="request18"/><br/>
+<bot name="name"/>: <get name="response18"/>
+</condition>
+<condition name="request17" value="*">
+<br/>
+<get name="name"/>: <get name="request17"/><br/>
+<bot name="name"/>: <get name="response17"/>
+</condition>
+<condition name="request16" value="*">
+<br/>
+<get name="name"/>: <get name="request16"/><br/>
+<bot name="name"/>: <get name="response16"/>
+</condition>
+<condition name="request15" value="*">
+<br/>
+<get name="name"/>: <get name="request15"/><br/>
+<bot name="name"/>: <get name="response15"/>
+</condition>
+<condition name="request14" value="*">
+<br/>
+<get name="name"/>: <get name="request14"/><br/>
+<bot name="name"/>: <get name="response14"/>
+</condition>
+<condition name="request13" value="*">
+<br/>
+<get name="name"/>: <get name="request13"/><br/>
+<bot name="name"/>: <get name="response13"/>
+</condition>
+<condition name="request12" value="*">
+<br/>
+<get name="name"/>: <get name="request12"/><br/>
+<bot name="name"/>: <get name="response12"/>
+</condition>
+<condition name="request11" value="*">
+<br/>
+<get name="name"/>: <get name="request11"/><br/>
+<bot name="name"/>: <get name="response11"/>
+</condition>
+<condition name="request10" value="*">
+<br/>
+<get name="name"/>: <get name="request10"/><br/>
+<bot name="name"/>: <get name="response10"/>
+</condition>
+<condition name="request9" value="*">
+<br/>
+<get name="name"/>: <get name="request9"/><br/>
+<bot name="name"/>: <get name="response9"/>
+</condition>
+<condition name="request8" value="*">
+<br/>
+<get name="name"/>: <get name="request8"/><br/>
+<bot name="name"/>: <get name="response8"/>
+</condition>
+<condition name="request7" value="*">
+<br/>
+<get name="name"/>: <get name="request7"/><br/>
+<bot name="name"/>: <get name="response7"/>
+</condition>
+<condition name="request6" value="*">
+<br/>
+<get name="name"/>: <get name="request6"/><br/>
+<bot name="name"/>: <get name="response6"/>
+</condition>
+<condition name="request5" value="*">
+<br/>
+<get name="name"/>: <get name="request5"/><br/>
+<bot name="name"/>: <get name="response5"/>
+</condition>
+<condition name="request4" value="*">
+<br/>
+<get name="name"/>: <get name="request4"/><br/>
+<bot name="name"/>: <get name="response4"/>
+</condition>
+<condition name="request3" value="*">
+<br/>
+<get name="name"/>: <get name="request3"/><br/>
+<bot name="name"/>: <get name="response3"/>
+</condition>
+<condition name="request2" value="*">
+<br/>
+<get name="name"/>: <get name="request2"/><br/>
+<bot name="name"/>: <get name="response2"/>
+</condition>
+<condition name="request1" value="*">
+<br/>
+<get name="name"/>: <get name="request1"/><br/>
+<bot name="name"/>: <get name="response1"/>
+</condition>
+
+
+
+</template>
+</category>
+</aiml>

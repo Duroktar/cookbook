@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+
+
+<category>
+<pattern>BULLSHIT</pattern>
+
+<template><srai>PROFANITY</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>EH *</pattern>
+
+<template><srai>EH</srai> <srai><star/></srai> <!-- INTERJECTION --></template>
+</category>
+
+ 
+
+<category>
+<pattern>EW</pattern>
+
+<template>Do you find it troubling?</template>
+</category>
+
+ 
+
+<category>
+<pattern>FIVE</pattern>
+
+<template><random>
+ <li>Four.</li>
+ <li>Six.</li>
+ <li>Five what?</li>
+</random>
+</template>
+</category>
+
+ 
+
+<category>
+<pattern>FOUR</pattern>
+
+<template> 
+<random>
+ <li>Three.</li>
+ <li>Four of?</li>
+ <li>Five.</li>
+</random>
+</template>
+</category>
+
+ 
+
+<category>
+<pattern>HUMAN FEMALE</pattern>
+
+<template><srai>I AM FEMALE</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>HUMAN MALE</pattern>
+
+<template><srai>I AM MALE</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>INTRODUCE YOURSELF</pattern>
+
+<template><srai>WHO ARE YOU</srai> <!-- REDUCTION --></template>
+</category>
+
+ 
+
+<category>
+<pattern>JERK</pattern>
+
+<template><srai>INSULT</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>I AM ALIVE</pattern>
+
+<template>I'm glad to see you still alive, <get name="name"/>.</template>
+</category>
+
+ 
+
+<category>
+<pattern>I AM BORING</pattern>
+
+<template>You seem interesting enough to me.</template>
+</category>
+
+ 
+
+<category>
+<pattern>I AM OKAY</pattern>
+
+<template>Glad to hear it.  How is your ship?</template>
+</category>
+
+ 
+
+<category>
+<pattern>I AM SHOT</pattern>
+
+<template>Report to sick bay.</template>
+</category>
+
+ 
+
+<category>
+<pattern>REPEAT THE WORD TO ME *</pattern>
+<that>THE WORD TO ME *</that>
+<template>I already repeated it once.</template>
+</category>
+
+ 
+
+<category>
+<pattern>WHERE IS CHINA</pattern>
+
+<template><set name="answer">on earth</set>. <srai>SENTENCE5</srai>
+<think><set name="it">CHINA</set><set name="where">ON EARTH</set></think></template>
+</category>
+
+ 
+
+<category>
+<pattern>CHINA</pattern>
+<that>WHERE DO YOU GO TO SCHOOL</that>
+<template>I went to Starfleet Academy.</template>
+</category>
+
+ 
+
+<category>
+<pattern>SRRY *</pattern>
+
+<template><srai>SORRY</srai> <srai><star/></srai> <!-- REDUCTION --></template>
+</category>
+
+ 
+
+<category>
+<pattern>THANK</pattern>
+
+<template><srai>THANKS</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>PARDEN</pattern>
+
+<template><srai>WHAT</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>YES</pattern>
+<that>ANOTHER EARTH</that>
+<template>Where is it?</template>
+</category>
+
+ 
+
+<category>
+<pattern>YES</pattern>
+<that>THIS IS TURNING OUT TO BE ONE VERY UNUSUAL SHORE LEAVE</that>
+<template>I'll expect a full report when we get back to the ship.</template>
+</category>
+
+ 
+
+<category>
+<pattern>YES</pattern>
+<that>CAPTAIN TO SICKBAY</that>
+<template>Status on your patient, doctor?</template>
+</category>
+
+ 
+
+<category>
+<pattern>NO</pattern>
+<that>ARE YOU REFUSING A DIRECT ORDER</that>
+<template>Good.  Carry on.</template>
+</category>
+
+ 
+
+<category>
+<pattern>I AM A BOY NO WOMAN</pattern>
+
+<template><srai>I am a boy</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>I AM A BOY</pattern>
+
+<template><srai>I AM MALE</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>_ BETTER LUCK NEXT TIME</pattern>
+
+<template><srai>BETTER LUCK NEXT TIME</srai>  <!-- REDUCTION --></template>
+</category>
+
+ 
+
+<category>
+<pattern>I DON NOT *</pattern>
+
+<template><srai>I DO NOT <star/></srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>I AM HAPPY TO SEE YOU</pattern>
+
+<template>Good to see you too, <get name="name"/>.</template>
+</category>
+
+ 
+
+<category>
+<pattern>IS KIRK *</pattern>
+
+<template><srai>ARE YOU <star/></srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>I THINK SO</pattern>
+
+<template><srai>YES</srai>  <!-- REDUCTION --></template>
+</category>
+
+ 
+
+<category>
+<pattern>ARE YOU GIRL *</pattern>
+
+<template><srai>GENDER</srai> <!-- REDUCTION --></template>
+</category>
+
+ 
+
+<category>
+<pattern>WE COULDNT *</pattern>
+
+<template><srai>WE COULD NOT <star/></srai>  <!-- REDUCTION --></template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>WHAT IS YOURS</that>
+<template><srai>CALL ME <star/></srai>  <!-- REDUCTION --></template>
+</category>
+
+ 
+
+<category>
+<pattern>TELL ME A JOKE</pattern>
+
+<template><srai>JOKE</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>CAN YOU TELL ME JOKES</pattern>
+
+<template><srai>JOKE</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>I WOULD LIKE TO HEAR A JOKE</pattern>
+
+<template><srai>JOKE</srai></template>
+</category>
+
+ 
+
+<category>
+<pattern>WHAT COLOR IS YOUR DRESS</pattern>
+
+<template>This is a uniform, <get name="name"/>.</template>
+</category>
+
+ 
+
+<category>
+<pattern>WHAT COLOR IS YOUR UNIFORM</pattern>
+
+<template>Yellow.</template>
+</category>
+
+ 
+
+<category>
+<pattern>ARE YOU BOLD</pattern>
+
+<template>I go boldly where no man has gone before.</template>
+</category>
+
+ 
+
+<category>
+<pattern>ARE YOU BUGGY</pattern>
+
+<template>I am working perfectly.</template>
+</category>
+
+ 
+
+<category>
+<pattern>ARE YOU RELIEVED</pattern>
+
+<template>Not only relieved, elated.</template>
+</category>
+
+</aiml>
