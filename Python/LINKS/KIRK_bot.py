@@ -1,0 +1,95 @@
+#  - LINKS - KIRK Bot
+#
+# By: traBpUkciP (2016)
+
+
+import aiml     # AI-Markup Language library
+import datetime
+import time
+import urllib   # library for dealing with web stuff through Python
+
+
+
+
+BRAIN_FILE = "bot_brain_KIRK.brn"
+k = aiml.Kernel()
+k.bootstrap(brainFile=BRAIN_FILE)
+
+
+def talk(text):
+    # THIS URL NEEDS TO BE SET TO YOUR PORT AND KEY ACCORDINGLY
+    # THIS PART ONLY WORK IF YOU HAVE LINKS WEB REQUEST SETTINGS ON DEFAULT
+    url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=1234ABC'  #set default talk to jarvis address
+    newurl = url.replace("placeholder", text)  #fill in text to be spoken
+    urllib.urlopen(newurl)
+
+def userInput():
+    f = open("F:\JARVIS\Chatbot\ALICE\dictation.txt")
+    a = f.read()
+    f.close()
+    if a == "False":
+        return False
+    else:
+        print "---------------------------------------------------------------------------------"
+        print "Input from LINKS detected!"
+        aliceSpeak(a)
+
+def clearInput():
+    f = open('F:\JARVIS\Chatbot\ALICE\dictation.txt', 'w')
+    f.write("False")
+    f.close()
+
+def writeHistory(i):
+    f = open('F:\JARVIS\Chatbot\ALICE\history.txt', 'a')
+    ts = time.time()
+    st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+    a = st + ": " + i
+    print a
+    print "---------------------------------------------------------------------------------"
+    f.write(a)
+    f.write('\n')
+    f.close()
+
+def aliceSpeak(feed):
+    message = feed
+    writeHistory(message)
+    clearInput()
+    bot_response = k.respond(message)
+    talk(bot_response)
+    main()
+
+
+def main():
+    while userInput() == False:
+        time.sleep(.1)
+        print "working"
+        continue
+
+try:
+    while True:
+        main()
+except KeyboardInterrupt:
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
