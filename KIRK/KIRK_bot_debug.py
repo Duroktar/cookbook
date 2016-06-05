@@ -27,7 +27,7 @@ def talk(text):
 def userInput():
     print "success"
     print "opening dictation file"
-    f = open("dictation.txt")
+    f = open( path + "/dictation.txt")
     print "success"
     print "reading dictation file into a"
     a = f.read()
@@ -47,7 +47,7 @@ def userInput():
 
 def clearInput():
     print "getting ready to set dictation file to false"
-    f = open('dictation.txt', 'w')
+    f = open( path + '/dictation.txt', 'w')
     print "opened file"
     f.write("False")
     print "reset to false"
@@ -63,7 +63,7 @@ def writeHistory(i):
     ts = ""
     print "success"
     print "opening history file"
-    f = open('history.txt', 'a')
+    f = open( path + '/history.txt', 'a')
     print "success"
     print "getting timestamp"
     ts = time.time()
