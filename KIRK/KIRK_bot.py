@@ -25,7 +25,7 @@ def talk(text):
     urllib.urlopen(newurl)
 
 def userInput():
-    f = open("dictation.txt")
+    f = open( path + "/dictation.txt")
     a = f.read()
     f.close()
     if a == "False":
@@ -36,12 +36,12 @@ def userInput():
         aliceSpeak(a)
 
 def clearInput():
-    f = open('dictation.txt', 'w')
+    f = open( path + '/dictation.txt', 'w')
     f.write("False")
     f.close()
 
 def writeHistory(i):
-    f = open('history.txt', 'a')
+    f = open( path + '/history.txt', 'a')
     ts = time.time()
     st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
     a = st + ": " + i
