@@ -6,6 +6,7 @@ import time
 import sys
 import os
 import json
+import ctypes
 
 PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
 SEARCH = ""
@@ -78,10 +79,13 @@ def writeHistory(i):
 def talk(text):
     # THIS URL NEEDS TO BE SET TO YOUR PORT AND KEY ACCORDINGLY
     # THIS PART ONLY WORK IF YOU HAVE LINKS WEB REQUEST SETTINGS ON DEFAULT
-    url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=1234ABC&request=enable'
-    newurl = url.replace("placeholder", text)  # fill in text to be spoken
-    urllib.urlopen(newurl)
-
+    try:
+        url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=1234ABC&request=enable'
+        newurl = url.replace("placeholder", text)  # fill in text to be spoken
+        urllib.urlopen(newurl)
+    except IOError:
+        print "LINKS web server not accepting request. Check port and key settings in user options under web settings."
+        ctypes.windll.user32.MessageBoxA(0, "Check LINKS web settings under user options. Make sure port:54657 & key:1234ABC match. Copy and paste this into your browser afterwards to see if they're enabled. http://127.0.0.1:54657/?action=[Speak('Test')]&key=1234ABC&request=enable", "Can't communicate with LINKS!", 1)
 
 def main():
     time.sleep(.3)

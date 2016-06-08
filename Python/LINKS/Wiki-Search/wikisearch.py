@@ -6,14 +6,13 @@ import time
 import sys, os
 import json
 import flatdict
-
-
-
+import ctypes
 
 PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
-
+QUERY = ""
 
 def getInput():
+    global QUERY
     print "Opening dictation.txt"
     f = open(PATH + "\dictation.txt")
     print "Got it.."
@@ -21,7 +20,9 @@ def getInput():
     print "Reading search string.."
     print "Search string: " + x + "Closing dictation.txt"
     f.close()
+    QUERY = x
     return x
+
 
 def buildUrl(_phrase):
     print "---------------"
@@ -32,10 +33,12 @@ def buildUrl(_phrase):
     print "Url: " + w_url + "----------------"
     return w_url
 
+
 def strip_non_ascii(string):
     ''' Returns the string without non ASCII characters'''
     stripped = (c for c in string if 0 < ord(c) < 127)
     return ''.join(stripped)
+
 
 def getJson(url):
     w_url = url
@@ -56,6 +59,8 @@ def getJson(url):
             key = flat[x]
             answer = strip_non_ascii(key)
             return answer
+        else:
+            return "No match found for, " + QUERY
     exit()
 
 
@@ -69,12 +74,16 @@ def writeHistory(i):
     f.write('\n')
     f.close()
 
+
 def talk(text):
     # THIS URL NEEDS TO BE SET TO YOUR PORT AND KEY ACCORDINGLY
     # THIS PART ONLY WORK IF YOU HAVE LINKS WEB REQUEST SETTINGS ON DEFAULT
-    url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=1234ABC&request=enable'  #set default talk to jarvis address
-    newurl = url.replace("placeholder", text)  #fill in text to be spoken
-    urllib.urlopen(newurl)
+    try:
+        url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=1234ABC&request=enable'  #set default talk to jarvis address
+        newurl = url.replace("placeholder", text)  #fill in text to be spoken
+        urllib.urlopen(newurl)
+    except IOError:
+        ctypes.windll.user32.MessageBoxA(0, "CHECK YOUR WEB SERVER SETTING IN LINKS", "Can't communicate to links!", 1)
 
 def main():
     time.sleep(.3)
@@ -87,5 +96,6 @@ def main():
     resp = getJson(url)
     print "Response: " + resp
     talk(resp)
+
 
 main()
