@@ -20,9 +20,9 @@ k.bootstrap(brainFile=BRAIN_FILE)
 def talk(text):
     # THIS URL NEEDS TO BE SET TO YOUR PORT AND KEY ACCORDINGLY
     # THIS PART ONLY WORK IF YOU HAVE LINKS WEB REQUEST SETTINGS ON DEFAULT
-    url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=1234ABC'  #set default talk to jarvis address
-    newurl = url.replace("placeholder", text)  #fill in text to be spoken
-    urllib.urlopen(newurl)
+    url = 'http://localhost:54657/?action=[Speak("' + text + '")]&key=1234ABC'  #set default talk to jarvis address
+    #newurl = url.replace("placeholder", text)  #fill in text to be spoken
+    urllib.urlopen(url)
 
 def userInput():
     f = open( path + "/dictation.txt")
