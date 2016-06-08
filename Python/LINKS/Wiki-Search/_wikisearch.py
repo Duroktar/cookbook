@@ -3,14 +3,18 @@
 import urllib
 import datetime
 import time
-import sys, os
-import json
-import flatdict
+import sys
+import os
 import ctypes
 import wikipedia
 
 PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
 QUERY = ""
+CONFIRM = False
+
+
+def getConfirm(con):
+    global CONFIRM
 
 
 def getInput():
@@ -47,46 +51,6 @@ def searchWiki(text):
     print y.summary
 
 
-def buildUrl(_phrase):
-    print "---------------"
-    print "Building URL"
-    phrase = _phrase.replace(" ", "+")
-    url = "https://en.wikipedia.org/w/api.php?format=json&action=query&redirects=1&prop=extracts&exintro=&explaintext=&titles=_replace_"
-    w_url = url.replace("_replace_", phrase)
-    print "Url: " + w_url + "----------------"
-    return w_url
-
-
-def strip_non_ascii(string):
-    ''' Returns the string without non ASCII characters'''
-    stripped = (c for c in string if 0 < ord(c) < 127)
-    return ''.join(stripped)
-
-
-def getJson(url):
-    w_url = url
-    print "Sending request"
-    print "Request: " + w_url
-    data = urllib.urlopen(w_url).read()
-    print type(data)
-    # print "Response: " + data
-    print "--------------------------------------"
-    print "Converting to json"
-    jsonData = json.loads(data)
-    print type(jsonData)
-    print "--------------------------------------"
-    flat = flatdict.FlatDict(jsonData)
-    for key in flat:
-        if "extract" in key:
-            x = key
-            key = flat[x]
-            answer = strip_non_ascii(key)
-            return answer
-        else:
-            return "No match found for, " + QUERY
-    exit()
-
-
 def writeHistory(i):
     f = open(PATH + '\history.txt', 'a')
     ts = time.time()
@@ -107,6 +71,7 @@ def talk(text):
         urllib.urlopen(newurl)
     except IOError:
         ctypes.windll.user32.MessageBoxA(0, "CHECK YOUR WEB SERVER SETTING IN LINKS", "Can't communicate to links!", 1)
+
 
 def main():
     time.sleep(.3)
