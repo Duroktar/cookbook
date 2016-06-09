@@ -12,7 +12,7 @@ except ImportError:
     )
     import apiai
 
-CLIENT_ACCESS_TOKEN = 'd90d496b98f6425bad5bbdee8b1ee1b2'
+CLIENT_ACCESS_TOKEN = 'API.AI KEY HERE'
 
 
 def main():
