@@ -11,7 +11,7 @@ Question = 5
 Answer = 6
 
 df = pd.read_csv("F:\AI\JEOPARDY.csv")
-round = df.iloc[pick, Round]
+game_round = df.iloc[pick, Round]
 category = df.iloc[pick, Category]
 value = df.iloc[pick, Value]
 question = df.iloc[pick, Question] # you can also use df['column_name']
@@ -19,7 +19,7 @@ answer = df.iloc[pick, Answer]
 
 #              df.loc[row_indexer,column_indexer]
 
-print(round)
+print(game_round)
 print(category)
 print(value)
 print(question)

@@ -82,14 +82,14 @@ while (num < 1000):
 import sys
 
 
-def function(): pass   
+def function(): pass
 
 
-print type(1)       # int
-print type("")      # str
-print type([])      # list
-print type({})      # dict
-print type(())      # tuple
-print type(object)  # type
-print type(function)# function
-print type(sys)     #module
+print type(1)         # int
+print type("")        # str
+print type([])        # list
+print type({})        # dict
+print type(())        # tuple
+print type(object)    # type
+print type(function)  # function
+print type(sys)       # module

@@ -1,7 +1,7 @@
 import pandas as pd
 
-row = 5        #   rowIndex:fifth row going down, ie:Index 5
-column = 5     #   columnIndex:fifth row going across, ie:Index 5
+row = 5        # rowIndex:fifth row going down, ie:Index 5
+column = 5     # columnIndex:fifth row going across, ie:Index 5
 
 '''
 df.iloc[row_indexer,column_indexer]
@@ -14,8 +14,8 @@ gotta figure out how to call values by column name..
 # df = pd.read_csv("F:\AI\file.csv")     # Target File
 df = pd.read_csv("F:\AI\JEOPARDY.csv")   # Example
 
-withvar = df.iloc[row, column]           # Can use variables
-withint = df.iloc[1, 1]                  # or integers
+with_var = df.iloc[row, column]           # Can use variables
+with_int = df.iloc[1, 1]                  # or integers
 
-print(withvar)
-print(withint)
+print(with_var)
+print(with_int)
