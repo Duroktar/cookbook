@@ -4,6 +4,7 @@ import links
 import sys
 import json
 import os
+import ConfigParser
 try:
     import apiai
 except ImportError:
@@ -12,11 +13,22 @@ except ImportError:
     )
     import apiai
 
-CLIENT_ACCESS_TOKEN = 'YOUR_ACCESS_TOKEN'
+
+PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
+
+
+Config = ConfigParser.ConfigParser()
+Config.read(PATH + "\config.ini")
+Config.sections()
+PORT = Config.get("LINKS", 'Port')
+WEBKEY = Config.get("LINKS", 'Key')
+CLIENTKEY = Config.get("APIKey", 'ClientKey')
+DEVKEY = Config.get("APIKey", 'DevKey')
 
 
 def main():
-    ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
+
+    ai = apiai.ApiAI(CLIENTKEY)
 
     request = ai.text_request()
 
@@ -39,32 +51,22 @@ def main():
 
     jresponse = json.loads(new_response)
     # print "Json: "
-    # print jresponse
+    print jresponse
     # print "==================================="
     print jresponse['result']['fulfillment']['speech']
 
     if jresponse['result']['fulfillment']['speech']:
-        final = jresponse['result']['fulfillment']['speech']
+        response = jresponse['result']['fulfillment']['speech']
+        final = strip_non_ascii(response)
         print "Response from api.ai: " + final
-        links.talk(final)
+        links.talk(PORT, WEBKEY, final)
     else:
         print "Exception"
 
-
+def strip_non_ascii(string):
+    """ Returns the string without non ASCII characters """
+    stripped = (c for c in string if 0 < ord(c) < 127)
+    return ''.join(stripped)
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
