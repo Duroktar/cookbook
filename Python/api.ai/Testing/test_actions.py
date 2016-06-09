@@ -13,6 +13,8 @@ except ImportError:
 
 CLIENT_ACCESS_TOKEN = '09604c7f91ce4cd8a4ede55eb5340b9d'
 
+
+
 class TestActions(unittest.TestCase):
     def setUp(self):
         self.ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
