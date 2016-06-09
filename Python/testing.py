@@ -2,7 +2,7 @@ import urllib   # library for dealing with web stuff through Python
 
 
 def talk(text):   #function to make jarvis say something USE THIS FUNCTION IN YOUR CODE
-    url = 'http://slayernet:54657/?action=[Speak("placeholder")]&key=1234ABC'  #set default talk to jarvis address
+    url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=1234ABC'  #set default talk to jarvis address
     newurl = url.replace("placeholder", text)      #fill in text to be spoken
     urllib.urlopen(newurl)      #send web request with new ddata in it
 
