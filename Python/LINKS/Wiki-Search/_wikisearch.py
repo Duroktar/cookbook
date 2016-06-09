@@ -80,8 +80,6 @@ def main():
     print "----------------------------"
     print "Getting User Input"
     data = getInput()
-    url = buildUrl(data)
-    resp = getJson(url)
     print "Response: " + resp
     talk(resp)
 
