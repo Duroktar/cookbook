@@ -11,13 +11,15 @@ import wikipedia
 PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
 QUERY = ""
 CONFIRM = False
+SECTION_COUNT = 0
 
 
-def getConfirm(con):
+def get_confirm(self):
     global CONFIRM
+    return self
 
 
-def getInput():
+def get_input():
     global QUERY
     print "Opening dictation.txt"
     f = open(PATH + "\dictation.txt")
@@ -30,28 +32,38 @@ def getInput():
     return x
 
 
-def searchWiki(text):
+def search_wiki(text):
     x = wikipedia.search(text)
-    y = wikipedia.page("Dogs")
+    y = wikipedia.page(text)
+    title = y.title
+    sections = y.sections
+    summary = y.summary
+    print "Search results:"
+    print x
+    print "------------------------------------------------------------------------------------------------"
     print "Title: "
-    print y.title
-    print "-----------------------------------------------------------"
-    print "Content: "
-    print y.content
-    print "-----------------------------------------------------------"
-    print "Categories: "
-    print y.categories
-    print "-----------------------------------------------------------"
-    print "Sections: "
-    print y.sections
-    for section in y.sections:
-        talk(section)
-    print "-----------------------------------------------------------"
+    print title
+    print "--------------------------------------------------------------------------------------------------"
+    print "Sections: The new way.."
+    print type(sections)
+    for i in sections:
+        global SECTION_COUNT
+        x = y.section(i)
+        if x == "":
+            continue
+        else:
+            print "----------------------------------------------------------------------------------------------"
+            print "{}: ".format(i)
+            print x.strip()
+            print type(x)
+            SECTION_COUNT += 1
+            continue
+    print "------------------------------------------------------------------------------------------------"
     print "Summary: "
-    print y.summary
+    print summary
 
 
-def writeHistory(i):
+def write_history(i):
     f = open(PATH + '\history.txt', 'a')
     ts = time.time()
     st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
@@ -76,12 +88,9 @@ def talk(text):
 def main():
     time.sleep(.3)
     print "Starting LINKS/Wiki engine.."
-    print "Success.."
     print "----------------------------"
-    print "Getting User Input"
-    data = getInput()
-    print "Response: " + resp
-    talk(resp)
+    # x = get_input()
+    # y = search_wiki(x)
 
 
-searchWiki('dogs')
+search_wiki("horses")
