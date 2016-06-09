@@ -21,7 +21,12 @@ def main():
     request = ai.text_request()
 
     request.lang = 'en'  # optional, default value equal 'en'
-
+    
+    """ 
+    This is where the user input comes in. 
+    Uncomment links.get_input() and delete "How are you today"
+    once integrated into links.
+    """
     request.query = "How are you today?"  # links.get_input()
 
     print "Sending  -{}-  to api.ai ".format(request.query)
