@@ -16,7 +16,6 @@ except ImportError:
 
 PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
 
-
 Config = ConfigParser.ConfigParser()
 Config.read(PATH + "\config.ini")
 Config.sections()
@@ -27,28 +26,17 @@ DEVKEY = Config.get("APIKey", 'DevKey')
 
 
 def main():
-
     ai = apiai.ApiAI(CLIENTKEY)
-
     request = ai.text_request()
-
     request.lang = 'en'  # optional, default value equal 'en'
-
-    request.query = links.get_input()
-
+    request.query = links.varfetch("LastSubject")
     # print "Sending  -{}-  to api.ai ".format(request.query)
     # print "\n ===================================\n"
-
     links.write_history(request.query)
-
     response = request.getresponse()
-
     # print type(response)
-
     new_response = response.read()
-
     # print type(new_response)
-
     jresponse = json.loads(new_response)
     # print "Json: "
     # print jresponse
@@ -58,10 +46,11 @@ def main():
     if jresponse['result']['fulfillment']['speech']:
         response = jresponse['result']['fulfillment']['speech']
         final = strip_non_ascii(response)
-        # print "Response from api.ai: " + final
-        links.talk(PORT, WEBKEY, final)
+        print final
+        # links.talk(PORT, WEBKEY, final)
     else:
-        links.talk(PORT, WEBKEY, "Sorry, no response found.")
+        # links.talk(PORT, WEBKEY, "Sorry, no response found.")
+        print "Sorry, no response found."
 
 def strip_non_ascii(string):
     """ Returns the string without non ASCII characters """
