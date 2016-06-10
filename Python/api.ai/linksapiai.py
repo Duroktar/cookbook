@@ -34,10 +34,10 @@ def main():
 
     request.lang = 'en'  # optional, default value equal 'en'
 
-    request.query = "How are you today?"  # links.get_input()
+    request.query = links.get_input()
 
-    print "Sending  -{}-  to api.ai ".format(request.query)
-    print "\n ===================================\n"
+    # print "Sending  -{}-  to api.ai ".format(request.query)
+    # print "\n ===================================\n"
 
     links.write_history(request.query)
 
@@ -51,17 +51,17 @@ def main():
 
     jresponse = json.loads(new_response)
     # print "Json: "
-    print jresponse
+    # print jresponse
     # print "==================================="
-    print jresponse['result']['fulfillment']['speech']
+    # print jresponse['result']['fulfillment']['speech']
 
     if jresponse['result']['fulfillment']['speech']:
         response = jresponse['result']['fulfillment']['speech']
         final = strip_non_ascii(response)
-        print "Response from api.ai: " + final
+        # print "Response from api.ai: " + final
         links.talk(PORT, WEBKEY, final)
     else:
-        print "Exception"
+        links.talk(PORT, WEBKEY, "Sorry, no response found.")
 
 def strip_non_ascii(string):
     """ Returns the string without non ASCII characters """
