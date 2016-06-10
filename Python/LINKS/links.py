@@ -1,19 +1,7 @@
 # coding: utf-8
 
-import datetime
-import time
-import sys
-import os
-import urllib
-import ctypes
-import wikipedia
-
-PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
-QUERY = ""
-
 
 def get_input():
-    global QUERY
     print "Opening dictation.txt"
     f = open(PATH + "\dictation.txt")
     print "Got it.."
@@ -21,17 +9,19 @@ def get_input():
     print "Reading search string.."
     print "Search string: " + x + "Closing dictation.txt"
     f.close()
-    write_history(x)
-    QUERY = x
+    print "Writing history"
     return x
 
 
-def search_wiki(text):
-    y = wikipedia.page(text)
-    title = y.title
-    summary = y.summary
-    answer = "Retrieving data. {}. {}.".format(title, summary)
-    return answer
+def build_url(_phrase):
+    print "---------------"
+    print "Building URL"
+    phrase = _phrase.replace(" ", "+")
+    url = "https://en.wikipedia.org/w/api.php?format=json&action=query&redirects=1" \
+          "&prop=extracts&exintro=&explaintext=&titles=_replace_"
+    w_url = url.replace("_replace_", phrase)
+    print "Url: " + w_url + "----------------"
+    return w_url
 
 
 def write_history(i):
@@ -39,9 +29,7 @@ def write_history(i):
     ts = time.time()
     st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
     a = st + ": " + i
-    print "Writing history: "
     print a
-    print "-----------------------------"
     f.write(a)
     f.write('\n')
     f.close()
@@ -56,19 +44,3 @@ def talk(text):
         urllib.urlopen(newurl)
     except IOError:
         ctypes.windll.user32.MessageBoxA(0, "CHECK YOUR WEB SERVER SETTING IN LINKS", "Connection error", 1)
-
-
-def main():
-    time.sleep(.3)
-    print "Starting LINKS/Wiki engine.."
-    print "Success.."
-    print "----------------------------"
-    print "Getting User Input"
-    data = get_input()
-    answer = search_wiki(data)
-    talk(answer)
-    print answer
-    return answer
-
-
-main()
