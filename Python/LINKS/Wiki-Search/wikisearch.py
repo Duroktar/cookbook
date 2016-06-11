@@ -91,11 +91,9 @@ def talk(port, webkey, text):
         addport = url.replace("_port_", port)
         addkey = addport.replace("_passkey_", webkey)
         finalurl = addkey.replace("_placeholder_", text)  # fill in text to be spoken
-        print finalurl
+        # print finalurl
         urllib.urlopen(finalurl)
     except IOError:
-        talk(PORT, WEBKEY, "LINKS web server not accepting request. "
-                           "Check port and key settings in user options under web settings.")
         ctypes.windll.user32.MessageBoxA(0, "Check LINKS web settings under user options. "
                                             "Make sure port & key match your config file.")
 
@@ -123,6 +121,7 @@ def main():
     # print answer
     # print type(answer)
     # print "==============================="
+    print answer
     talk(PORT, WEBKEY, answer)
 
 
