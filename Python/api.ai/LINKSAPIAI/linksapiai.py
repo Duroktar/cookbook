@@ -39,19 +39,24 @@ def main():
     new_response = response.read()
     # print type(new_response)
     jresponse = json.loads(new_response)
+    # print type(jresponse)
     # print "Json: "
     # print jresponse
     # print "==================================="
     # print jresponse['result']['fulfillment']['speech']
 
-    if jresponse['result']['fulfillment']['speech']:
+    if jresponse['result']['fulfillment']['speech'] == "":
+        print "Nothing found for that query."
+    else:
         response = jresponse['result']['fulfillment']['speech']
         final = strip_non_ascii(response)
         print final
         # links.talk(PORT, WEBKEY, final)
-    else:
-        # links.talk(PORT, WEBKEY, "Sorry, no response found.")
-        print "Sorry, no response found."
+    """
+    if 'result''fulfillment''speech' in jresponse:
+            r
+"""
+
 
 def strip_non_ascii(string):
     """ Returns the string without non ASCII characters """
