@@ -1,5 +1,5 @@
 1. unpack zip file
-2. open config file and fill in your details.
+2. open config file and fill in your api.ai client key.
 3. Enter these custom commands into links.
 Command: smart bot {that=test_dictation}
 Response:
