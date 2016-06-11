@@ -44,14 +44,17 @@ def main():
     # print jresponse
     # print "==================================="
     # print jresponse['result']['fulfillment']['speech']
-
-    if jresponse['result']['fulfillment']['speech'] == "":
-        print "Nothing found for that query."
-    else:
-        response = jresponse['result']['fulfillment']['speech']
-        final = strip_non_ascii(response)
-        print final
-        # links.talk(PORT, WEBKEY, final)
+    try:
+        if jresponse['status']['errorDetails']:
+            print jresponse['status']['errorDetails']
+    except:
+        if jresponse['result']['fulfillment']['speech'] == "":
+            print "Nothing found for that query."
+        else:
+            response = jresponse['result']['fulfillment']['speech']
+            final = strip_non_ascii(response)
+            print final
+            # links.talk(PORT, WEBKEY, final)
     """
     if 'result''fulfillment''speech' in jresponse:
             r
