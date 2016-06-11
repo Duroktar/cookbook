@@ -82,7 +82,7 @@ def talk(text):
     # THIS URL NEEDS TO BE SET TO YOUR PORT AND KEY ACCORDINGLY
     # THIS PART ONLY WORK IF YOU HAVE LINKS WEB REQUEST SETTINGS ON DEFAULT
     try:
-        url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=ABC1234&request=enable'
+        url = 'http://127.0.0.1:54657/?action=[Speak("placeholder")]&key=1234ABC&request=enable'
         newurl = url.replace("placeholder", text)  # fill in text to be spoken
         urllib.urlopen(newurl)
     except IOError:
