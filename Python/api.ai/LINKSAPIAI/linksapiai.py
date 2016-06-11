@@ -46,7 +46,7 @@ def main():
     # print jresponse['result']['fulfillment']['speech']
     try:
         if jresponse['status']['errorDetails']:
-            print jresponse['status']['errorDetails']
+            print "Your api client key is invalid. Please check your settings in the config file."
     except:
         if jresponse['result']['fulfillment']['speech'] == "":
             print "Nothing found for that query."
