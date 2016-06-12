@@ -45,13 +45,14 @@ def main():
             return
     except KeyError:
         if jresponse['result']['fulfillment']['speech'] == "":
+            links.talk(PORT, WEBKEY, "Nothing found for that query.")
             print "Nothing found for that query."
             return
         else:
             response = jresponse['result']['fulfillment']['speech']
             final = strip_non_ascii(response)
-            print final
             links.talk(PORT, WEBKEY, final)
+            print final
 
 
 def strip_non_ascii(string):
