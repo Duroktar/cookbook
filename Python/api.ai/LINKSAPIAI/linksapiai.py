@@ -32,18 +32,19 @@ def main():
     response = request.getresponse()
     new_response = response.read()
     jresponse = json.loads(new_response)
-    if SESSION_ID == "":
-        key = jresponse['id']
-        cfg = INIConfig(open(PATH + "\config.ini"))
-        cfg.APIKey.SessionID = " " + key
-        f = open(PATH + "\config.ini", 'w')
-        print >> f, cfg
-        f.close()
+
     try:
         if jresponse['status']['errorDetails']:
             print "Your api client key is invalid. Please check your settings in the config file."
             return
-    except KeyError:
+    except:
+        if SESSION_ID == "":
+            key = jresponse['id']
+            cfg = INIConfig(open(PATH + "\config.ini"))
+            cfg.APIKey.SessionID = " " + key
+            f = open(PATH + "\config.ini", 'w')
+            print >> f, cfg
+            f.close()
         if jresponse['result']['fulfillment']['speech'] == "":
             links.talk(PORT, WEBKEY, "Nothing found for that query.")
             print "Nothing found for that query."
