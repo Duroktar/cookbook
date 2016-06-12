@@ -9,6 +9,8 @@ Get movie information from the web and have Jarvis read you a summary.
   Profile: main
 4. Have fun :)
 
+Link to download -
+https://drive.google.com/open?id=0BxC7Vg_reMwnR0w5X0luZFhUeGc
 
 Feel free to e-mail me with any questions or if you need help setting it up @ duroktar@gmail.com
 
