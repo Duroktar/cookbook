@@ -22,8 +22,7 @@ really useful. This merely acts as a means of voice interaction with the API.*
 
 
 **IF YOU WANT TO RUN AS A PYTHON FILE AND NOT EXE**
- You must add links.py to your **PATH**\python27\lib\ or this will not work!
- You also need to get the ConfigParser, iniparse & apiai libraries, which are all
+ You need to get the ConfigParser, iniparse & apiai libraries, which are all
  downloadable from pip. 
   ex: 
    C:\>python.exe -m pip install apiai
