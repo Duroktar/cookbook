@@ -1,6 +1,0 @@
-2016-06-04 15:32:32: 
-2016-06-04 15:32:45: hello
-2016-06-04 15:32:53: yes how are you
-2016-06-04 15:33:06: how many dogs are there in the world
-2016-06-04 15:33:19: what is 3 times 5
-2016-06-04 15:34:24: how old is the earth
