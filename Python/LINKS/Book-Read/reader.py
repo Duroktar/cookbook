@@ -1,6 +1,7 @@
-import urllib   # library for dealing with web stuff through Python
+import urllib
 import os
 import sys
+import ConfigParser
 
 PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
 
@@ -11,13 +12,13 @@ PORT = Config.get("LINKS", 'Port')
 WEBKEY = Config.get("LINKS", 'Key')
 
 
-def talk(port, webkey, text):
+def talk(text):
     # THIS URL NEEDS TO BE SET TO YOUR PORT AND KEY ACCORDINGLY
     # THIS PART ONLY WORK IF YOU HAVE LINKS WEB REQUEST SETTINGS ON DEFAULT
     try:
         url = 'http://127.0.0.1:_port_/?action=[Speak("_placeholder_")]&key=_passkey_&request=enable'
-        addport = url.replace("_port_", port)
-        addkey = addport.replace("_passkey_", webkey)
+        addport = url.replace("_port_", PORT)
+        addkey = addport.replace("_passkey_", WEBKEY)
         finalurl = addkey.replace("_placeholder_", text)  # fill in text to be spoken
         # print finalurl
         urllib.urlopen(finalurl)
