@@ -3,8 +3,8 @@ import urlparse
 
 
 def talk(text):
-    url = 'http://slayernet:54657/?action=[Speak("replace")]&key=1234ABC'
-    newurl = url.replace("replace", text)
+    url = 'http://localhost:54657/?action=[Speak("_replace")]&key=ABC1234'
+    newurl = url.replace("_replace", text)
     urllib.urlopen(newurl)
 
 talk("Whats up")
