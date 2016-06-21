@@ -11,5 +11,5 @@ Send any feedback/bugs/etc.. good OR bad to duroktar@gmail.com I appreciate it a
 Thanks, traBpUkciP
 
 
-And if you're feeling exceptionally generous today, feel free to buy me a coffee! Because coffee makes the code compile.
+And if you're feeling extra nice today, feel free to buy me a coffee! Because coffee makes the code compile.
 <a href='https://ko-fi.com/A5034CT' target='_blank'><img height='32' style='border:0px;height:32px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> 
