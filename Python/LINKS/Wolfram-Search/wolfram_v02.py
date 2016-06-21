@@ -87,10 +87,8 @@ def user_input():
     if a == "False":
         return False
     else:
-        print "========================================="
-        print "Input from " + AINAME + " accepted!"
-        print "Input from " + NAME + " accepted!"
-        print "A script by Scott Doucet A.K.A traBpUkciP"
+        print "====================================================="
+        print "A script by Scott Doucet A.K.A traBpUkciP and Paul B."
         write_history(a)
         clear_input()
         ask_wolf(a)
