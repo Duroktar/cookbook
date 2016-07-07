@@ -24,6 +24,7 @@ def talk(text):
     newurl = url.replace("placeholder", text)  #fill in text to be spoken
     urllib.urlopen(newurl)
 
+
 def userInput():
     f = open( path + "/dictation.txt")
     a = f.read()
@@ -35,10 +36,12 @@ def userInput():
         print "Input from LINKS detected!"
         aliceSpeak(a)
 
+
 def clearInput():
     f = open( path + '/dictation.txt', 'w')
     f.write("False")
     f.close()
+
 
 def writeHistory(i):
     f = open( path + '/history.txt', 'a')
@@ -50,6 +53,7 @@ def writeHistory(i):
     f.write(a)
     f.write('\n')
     f.close()
+
 
 def aliceSpeak(feed):
     message = feed

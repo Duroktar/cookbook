@@ -1,5 +1,4 @@
 
-
 import sqlite3  # for creating simple sql database
 from contextlib import closing # initializes to application
 from flask import Flask, request, session, g, redirect, url_for, \
@@ -13,23 +12,28 @@ SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
 
+
 # create our little application :)
 app = Flask(__name__)
+
 
 # load config from envvar ie: all caps variables
 app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
+
 # method for easy connection to database VERY HANDY
 def connect_db():
 	return sqlite3.connect(app.config['DATABASE'])
-	
+
+
 # initializes the database
 def init_db():
     with closing(connect_db()) as db:
         with app.open_resource('schema.sql', mode='r') as f:
             db.cursor().executescript(f.read())
         db.commit()
-		
+
+
 @app.route('/add', methods=['POST'])
 def add_entry():
     if not session.get('logged_in'):
@@ -39,11 +43,13 @@ def add_entry():
     g.db.commit()
     flash('New entry was successfully posted')
     return redirect(url_for('show_entries'))
-		
+
+
 @app.before_request
 def before_request():
     g.db = connect_db()
-	
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
@@ -57,6 +63,7 @@ def login():
             flash('You were logged in')
             return redirect(url_for('show_entries'))
     return render_template('login.html', error=error)
+
 	
 @app.route('/logout')
 def logout():
