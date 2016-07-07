@@ -88,7 +88,7 @@ def user_input():
         return False
     else:
         print "====================================================="
-        print "A script by Scott Doucet A.K.A traBpUkciP and Paul B."
+        print "A script by traBpUkciP and Paul B."
         write_history(a)
         clear_input()
         ask_wolf(a)
