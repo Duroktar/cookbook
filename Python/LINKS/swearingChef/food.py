@@ -14,15 +14,14 @@ Config.read(PATH + "\config.ini")
 Config.sections()
 CONFIG_PORT = Config.get("LINKS", 'Port')
 CONFIG_WEBKEY = Config.get("LINKS", 'Key')
+KEY = None
 try:
     CONFIG_APIKEY = Config.get("food2fork", 'Key')
+    if CONFIG_APIKEY:
+        KEY = CONFIG_APIKEY
 except Exception as e:
     pass
 
-if CONFIG_APIKEY:
-    key = CONFIG_APIKEY
-else:
-    key = 'f3beb0afe0f5acbcd538d8ff10760ccd'   # Put your key in here to skip entering on load every time
 
 AI = pytron.Client()
 random.seed()
@@ -34,28 +33,26 @@ def reverse_enumerate(iterable):
     """
     return itertools.izip(reversed(range(len(iterable))), reversed(iterable))
 
-
-
-
 print("     *** Welcome to the bad ass motherfucking recipe finder!!! ***")
 AI.talk("Welcome to the badass motherfucking recipe finder!!!")
 print("            -Powered by the motherfucking food2fork API- \n")
 AI.talk("-Powered by the motherfucking food to fork API!!")
 
-if not key:
+
+if not KEY:
     print("           **Enter yo muthafuckin' food2fork API key !!** ")
     AI.talk("Enter your food to fork API key motherfucker!!")
     while True:
-        key = getpass.getpass(">>> ")
-        if not key or len(key) < 10:
+        KEY = getpass.getpass(">>> ")
+        if not KEY or len(KEY) < 10:
             print("       *** QUIT MESSING AROUND YOU CLUMSY ASS MOTHERFUCKER!! ***")
             AI.talk("       *** QUIT MESSING AROUND, YOU CLUMSY ASS MOTHERFUCKER!! ***")
             continue
         else:
             break
 
-search = "http://food2fork.com/api/search?key={}&q=".format(key)
-recipe = "http://food2fork.com/api/get?key={}&rId=".format(key)
+search = "http://food2fork.com/api/search?key={}&q=".format(KEY)
+recipe = "http://food2fork.com/api/get?key={}&rId=".format(KEY)
 
 while True:
     try:
