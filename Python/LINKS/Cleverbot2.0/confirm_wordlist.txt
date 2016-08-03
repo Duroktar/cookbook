@@ -1,0 +1,3 @@
+yes or no answers   clean response
+yes; yes please; affirmative; do it; go ahead; okay; sure; yup   yes
+no; dont; stop; no i didnt; nope; no thank you; no thanks  no

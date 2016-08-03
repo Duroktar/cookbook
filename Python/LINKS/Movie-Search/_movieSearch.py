@@ -13,12 +13,12 @@ SEARCH = ""
 
 def getInput():
 
-    print "Opening dictation.txt"
+    # print "Opening dictation.txt"
     f = open(PATH + "\dictation.txt")
-    print "Got it.."
+    # print "Got it.."
     x = f.read()
-    print "Reading search string.."
-    print "Search string: " + x
+    # print "Reading search string.."
+    # print "Search string: " + x
     f.close()
     global SEARCH
     SEARCH = x
@@ -27,11 +27,11 @@ def getInput():
 
 def buildUrl(x):
     phrase = x.replace(" ", "+")
-    print "---------------"
-    print "Building URL"
+    # print "---------------"
+    # print "Building URL"
     url = "http://www.omdbapi.com/?t=_replace_&y=&plot=short&r=json"
     w_url = url.replace("_replace_", phrase)
-    print "Url: " + w_url + "----------------"
+    # print "Url: " + w_url + "----------------"
     return w_url
 
 
@@ -43,14 +43,14 @@ def strip_non_ascii(string):
 
 def getJson(url):
     w_url = url
-    print "Sending request"
-    print "Request: " + w_url
+    # print "Sending request"
+    # print "Request: " + w_url
     data = urllib.urlopen(w_url).read()
-    print "--------------------------------------"
-    print "Converting to json:"
+    # print "--------------------------------------"
+    # print "Converting to json:"
     jsonData = json.loads(data)
-    print jsonData
-    print "--------------------------------------"
+    # print jsonData
+    # print "--------------------------------------"
     if jsonData['Response'] == 'False':
         return "Nothing found for {}.".format(SEARCH)
     else:
@@ -70,7 +70,7 @@ def writeHistory(i):
     ts = time.time()
     st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
     a = st + ": " + i
-    print a
+    # print a
     f.write(a)
     f.write('\n')
     f.close()
@@ -84,19 +84,19 @@ def talk(text):
         newurl = url.replace("placeholder", text)  # fill in text to be spoken
         urllib.urlopen(newurl)
     except IOError:
-        print "LINKS web server not accepting request. Check port and key settings in user options under web settings."
+        # print "LINKS web server not accepting request. Check port and key settings in user options under web settings."
         ctypes.windll.user32.MessageBoxA(0, "Check LINKS web settings under user options. Make sure port:54657 & key:1234ABC match. Copy and paste this into your browser afterwards to see if they're enabled. http://127.0.0.1:54657/?action=[Speak('Test')]&key=1234ABC&request=enable", "Can't communicate with LINKS!", 1)
 
 def main():
     time.sleep(.3)
-    print "Starting LINKS/Wiki engine.."
-    print "Success.."
-    print "----------------------------"
-    print "Getting User Input"
+    # print "Starting LINKS/Wiki engine.."
+    # print "Success.."
+    # print "----------------------------"
+    # print "Getting User Input"
     data = getInput()
     url = buildUrl(data)
     resp = getJson(url)
-    return resp
+    print(resp)
     exit()
     # talk(resp)
 
