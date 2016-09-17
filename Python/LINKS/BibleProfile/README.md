@@ -5,8 +5,6 @@ This copy of the King James Bible formatted to work for the Links Mark II Softwa
 
 For other Links Profiles including a Full English Dictionary, search "traBpUkciP" on the MVC Forums.
 
-For Python Scripts and more visit my Github at https://github.com/Duroktar/cookbook/blob/master/README.md there's also a Buy Me a Coffee button there as well if you'd like to help support my work.
-
 If you have any questions or requests, please e-mail me at Duroktar@gmail.com.
 
 Enjoy !
@@ -14,6 +12,11 @@ Enjoy !
 Sincerely,
 traBpUkciP / Duroktar@gmail.com
 
+Download
+--------
+https://drive.google.com/open?id=0BxC7Vg_reMwnVFl4UW5mOVJzWE0
+
+<a href='https://ko-fi.com/A5034CT' target='_blank'><img height='32' style='border:0px;height:32px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 Copyright - 2016 - traBpUkciP 
 Open Source "new" BSD License
