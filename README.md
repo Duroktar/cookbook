@@ -1,10 +1,9 @@
 # cookbook
 Repository for my code
 
+**Quick link to the MVC Links Mark II stuff https://github.com/Duroktar/cookbook/tree/master/Python/LINKS**
 
-Feel free to use anything you find here for whatever you'd like. Most of my scripts are built to run alongside the LINKS Mark II AI by MVC (http://mega-voice-command.com/) but I'm sure they can modified for other purposes as well. 
-
-
+Most of my scripts are built to run alongside the LINKS Mark II AI by MVC (http://mega-voice-command.com/) but I'm sure they can modified for other purposes as well. If any sources weren't mentioned in the scripts please let me know and I can correct it.
 
 Send any feedback/bugs/etc.. good OR bad to duroktar@gmail.com I appreciate it all!
 
