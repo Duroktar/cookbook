@@ -1,3 +1,6 @@
+Links Bible Profile
+===========
+
 This copy of the King James Bible formatted to work for the Links Mark II Software by MVC was made from free sources found on the internet by traBpUkciP. The parsing of the book ids into names was done mostly with the help of the Python Bible Module (https://github.com/jasford/python-bible).
 
 For other Links Profiles including a Full English Dictionary, search "traBpUkciP" on the MVC Forums.
