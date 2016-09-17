@@ -1,0 +1,20 @@
+Links Mark II: Bible Profile - Install Instructions.
+
+**REQUIRES MVC LINKS MARK II AVAILABLE HERE**
+http://mega-voice-command.com/windows.html 
+-Click the orange link at the bottom for the Free version or Donate and donwload by clicking the green button.
+
+1. Select the profiles tab from the Links flyout menu and enter a new profile named bible. New Profiles are added by double clicking on the first empty spot in the list.
+
+2. Once confirmed, navigate to the Custom Commands window and select Filter from the buttons below. From the menu choose 'bible' and confirm. 
+
+3. Once you are back to the Custom Commands screen click on the Social tab and then click IMPORT DATABASE from the small row of buttons. Navigate to the folder containing your download and select the bible_profile.txt file. Once ready click UPDATE. 
+
+NOTE: This is a 7mb file so when you click on UPDATE it may take awhile to respond. But when it does, your new profile will be ready to go.
+
+Have fun :)
+
+traBpUkciP
+
+Copyright - 2016 - traBpUkciP 
+Open Source "new" BSD License
