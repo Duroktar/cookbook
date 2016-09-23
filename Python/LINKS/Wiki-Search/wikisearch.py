@@ -10,7 +10,7 @@ except ImportError:
     retcode = subprocess.call(['pip', 'install', 'wikipedia'], stdout=FNULL, stderr=subprocess.STDOUT)
     import wikipedia
     
-query = sys.argv[1:]
+query = " ".join(sys.argv[1:])
 
 def main():
     time.sleep(.05)
