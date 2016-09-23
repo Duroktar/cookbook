@@ -16,12 +16,14 @@ Links Shell Command
  - **Response:** {{!Action!}}
  - **Action:** -ret"python" "%AppData%\LINKS\Customization\Scripts\wikisearch.py {that}"
  - **Profile:** main
+
 **SYNTAX IS VERY IMPORTANT. Copy and paste to be sure.**
 
 Usage example
 -------------
  - **User:** search wikipedia for Coffee
  - **LINKS:** Searching..
+
 Links will then read a summary of your search which can be paused and resumed using the respective default commands.
 Github
 
@@ -34,6 +36,7 @@ Dependancies
 Credits
 -------
 Created by: traBpUkciP
+
 <a href='https://ko-fi.com/A5034CT' target='_blank'><img height='32' style='border:0px;height:32px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=a' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> 
 
 Let me know if you have any requests/questions/complaints and I'll try to get to you all as soon as I can. Have fun :) 
