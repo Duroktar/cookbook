@@ -5,7 +5,7 @@ Api.ai Interface for the MVC: Links Mark II Ai
 Install
 -------
  - Unzip files into links scripts folder.
- - Enter you API.ai client key in the config.ini file.
+ - Enter your API.Ai Client Key in the config.ini file.
  - Enter shell command into Links
  
 Links Shell Command
