@@ -1,7 +1,6 @@
 # coding: utf-8
 import os, sys
 import time
-from thread import start_new_thread
 try:
     import wikipedia
 except ImportError:
