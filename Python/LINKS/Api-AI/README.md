@@ -16,6 +16,12 @@ In the shell command tab of Links enter
  - Action: -ret"%AppData%\LINKS\Customization\Scripts\linksapi.exe" "{that}"
  - Profile: main
 
+Or if you have Python installed
+ - Command: api bot {that=test_dictation}
+ - Response: {{!Action!}}
+ - Action: -ret"python" "%AppData%\LINKS\Customization\Scripts\linksapi.py" "{that}"
+ - Profile: main
+
 Usage
 -----
 User: api bot hello whats up
