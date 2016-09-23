@@ -1,4 +1,4 @@
-Links Mark II: Wikipedia Reader
+Wikipedia Reader
 ================
 Make Links smarter than ever with the power of Wikipedia!
 
@@ -20,15 +20,16 @@ Links Shell Command
 
 Usage example
 -------------
- - User: search wikipedia for Coffee
- - LINKS: Searching..
+ - **User:** search wikipedia for Coffee
+ - **LINKS:** Searching..
 Links will then read a summary of your search which can be paused and resumed using the respective default commands.
 Github
 
 Dependancies
 ------------
- - Python 2.7- *https://www.python.org/download/releases/2.7/*
- - Wikipedia library- *pip install wikipedia*
+ - **MVC: Links Mark II Ai** - *http://mega-voice-command.com/index.html*
+ - **Python 2.7** - *https://www.python.org/download/releases/2.7/*
+ - **Wikipedia library** - *pip install wikipedia*
 
 Credits
 -------
