@@ -19,7 +19,6 @@ def main():
     print(result)
 
 def search_wiki(text):
-    SECTION_COUNT = 0
     x = wikipedia.search(text)
     y = wikipedia.page(x[0])
     summary = y.summary.replace(';', ',').replace('"', "'").encode('utf-8')
