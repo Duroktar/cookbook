@@ -14,7 +14,7 @@ Links Shell Command
  **Command goes in LINKS Shell tab**
  - **Command:** Search wikipedia for {that=test_dictation}
  - **Response:** {{!Action!}}
- - **Action:** -ret"python" "%AppData%\LINKS\Customization\Scripts\wikisearch.py {that}"
+ - **Action:** -ret"python" "%AppData%\LINKS\Customization\Scripts\wikisearch.py" "{that}"
  - **Profile:** main
 
 **SYNTAX IS VERY IMPORTANT. Copy and paste to be sure.**
