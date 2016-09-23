@@ -8,19 +8,19 @@ MVC Links Mark II AI.
 
 Index
 -----
- - **Api.Ai** - Connect to you Api.ai bot. Requires a client key available free from https://api.ai/
- - **Ask-Search** - Get answers from Ask.com
- - **BibleProfile** - A King James Bible Profile (Request by: Joogee)
- - **Book-Rea**d - Reads the full short story "Dagon" by H.P Lovecraft. (This was my first script for links, and an amazing book)
- - **Cleverbot1** - Original version of Cleverbot script (Request by: ApatheticEuphoria)
- - **Cleverbot2** - Updated version using the Pytron library (https://github.com/Duroktar/PytronAI)
- - **Movie-Search** - Search the imdb with Links
- - **Wiki-Search** - By far my most popular script. Pull search results from Wikipedia for Links to read to you.
- - **Wolfram-Search** -  Pulls answers from WolframAlpha. Requires wofram key (Credits: Lead Programmer - awhall56, Scripting - traBpUkciP)
- - **CuckooClock** - A simple Cuckoo clock script for Links
- - **GreetingsTime** - A scipt that show how to use the Pytron library to get a response and time from Links using the Web Service
- - **SwearingChef** - My favorite script. Look up recipes and have the digital equivalent of Samuel L. Jackson read them out to you.
- - **misc** - Miscellaneous scripts
+ - [**Api.Ai**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/Api-AI "Api.ai") - Connect to you Api.ai bot. Requires a client key available free from https://api.ai/
+ - [**Ask-Search**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/Ask-Search "Ask-Search") - Get answers from Ask.com
+ - [**BibleProfile**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/BibleProfile "BibleProfile") - A King James Bible Profile (Request by: Joogee)
+ - [**Book-Read**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/Book-Read "Book-Read") - Reads the full short story "Dagon" by H.P Lovecraft. (This was my first script for links, and an amazing book)
+ - [**Cleverbot1**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/Cleverbot1.0 "Book-Read") - Original version of Cleverbot script (Request by: ApatheticEuphoria)
+ - [**Cleverbot2**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/Cleverbot2.0 "Book-Read") - Updated version using the Pytron library (https://github.com/Duroktar/PytronAI)
+ - [**Movie-Search**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/Movie-Search "Book-Read") - Search the imdb with Links
+ - [**Wiki-Search**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/Wiki-Search "Book-Read") - By far my most popular script. Pull search results from Wikipedia for Links to read to you.
+ - [**Wolfram-Search**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/Wolfram-Search "Book-Read") -  Pulls answers from WolframAlpha. Requires wofram key (Credits: Lead Programmer - awhall56, Scripting - traBpUkciP)
+ - [**CuckooClock**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/cuckooClock "Book-Read") - A simple Cuckoo clock script for Links
+ - [**GreetingsTime**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/greetingsTime "Book-Read") - A scipt that show how to use the Pytron library to get a response and time from Links using the Web Service
+ - [**SwearingChef**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/swearingChef "Book-Read") - My favorite script. Look up recipes and have the digital equivalent of Samuel L. Jackson read them out to you.
+ - [**misc**](https://github.com/Duroktar/cookbook/tree/master/Python/LINKS/misc "Book-Read") - Miscellaneous scripts
 
 Contributers
 ------------
