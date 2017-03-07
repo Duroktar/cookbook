@@ -6,6 +6,8 @@ import getpass
 import random
 import pytronlinks as pytron
 import ConfigParser
+import winsound
+import glob
 
 
 PATH = os.path.dirname(os.path.abspath(sys.argv[0]))
@@ -26,7 +28,12 @@ except Exception as e:
 AI = pytron.Client()
 random.seed()
 
+SONGS = []
+audio_extensions = ("*.flac","*.mp3","*.wav",)
 
+for extension in audio_extensions:
+    SONGS.extend(glob.glob(extension)
+                
 def reverse_enumerate(iterable):
     """
     Enumerate over an iterable in reverse order while retaining proper indexes
@@ -53,6 +60,8 @@ if not KEY:
 
 search = "http://food2fork.com/api/search?key={}&q=".format(KEY)
 recipe = "http://food2fork.com/api/get?key={}&rId=".format(KEY)
+
+winsound.PlaySound(random.choice(SONGS))
 
 while True:
     try:
